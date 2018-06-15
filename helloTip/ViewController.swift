@@ -44,6 +44,7 @@ class ViewController: UIViewController {
             totalAmount.text = "\(buttonAmount)"
             textFieldShouldReturn(textField: textFIeld)
         }
+        print("hello World")
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
