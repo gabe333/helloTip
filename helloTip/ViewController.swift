@@ -16,12 +16,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var total: UILabel!
     @IBOutlet weak var tip: UILabel!
+    @IBOutlet weak var viewrr: UIImageView!
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor.white
     }
 
     @IBAction func sliderChanged(_ sender: UISlider) {
@@ -51,6 +52,15 @@ class ViewController: UIViewController {
         self.textFIeld.resignFirstResponder()
         return true
     }
+    
+    @IBAction func switchSwitched(_ sender: UISwitch) {
+        if sender.isOn == false {
+            view.backgroundColor = UIColor.white
+        }else {
+            view.backgroundColor = UIColor.darkGray
+        }
+    }
+    
 
 }
 
